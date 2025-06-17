@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Все тренера</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+    <header class="px-10 py-6">
+      <h1 class="text-3xl font-bold">Все тренера</h1>
+    </header>
+
+   
+    <section class="px-10 mb-6">
+      <form class="flex w-full gap-3">
+        <input
+          type="text"
+          placeholder="🔍 Поиск тренеров"
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"/>
+        <button type="submit" class="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">Поиск</button>
+      </form>
+    </section>
+
+
+    <section class="flex flex-col md:flex-row px-10 gap-6">
+      <aside class="w-full md:w-[260px] space-y-4">
+        <div class="flex items-center space-x-2">
+          <input type="checkbox" id="withCourses" class="w-4 h-4" />
+          <label for="withCourses" class="text-sm">Тренеры с курсами</label>
+        </div>
+        <div class="space-y-2">
+          <label class="block text-sm font-medium">Язык обучения</label>
+          <select class="w-full border-gray-300 rounded-md px-3 py-2">
+            <option>Выбрать</option>
+          </select>
+        </div>
+        <label class="block text-sm font-medium">Предмет преподавания</label>
+        <select class="w-full border-gray-300 rounded-md px-3 py-2">
+          <option>Выбрать</option>
+        </select>
+        <label class="block text-sm font-medium">Филиал</label>
+        <select class="w-full border-gray-300 rounded-md px-3 py-2">
+          <option>Выбрать</option>
+        </select>
+        <label class="block text-sm font-medium">Направления</label>
+        <select class="w-full border-gray-300 rounded-md px-3 py-2">
+          <option>Выбрать</option>
+        </select>
+      </aside>
+
+<div class="flex-1">
+           
+<div class="bg-white rounded-xl shadow-md p-5 flex flex-col md:flex-row justify-between gap-4 mb-6">
+  <div class="flex gap-4 items-start">
+    <img src="images/traner1.jpg" alt="avatar" class="w-20 h-20 rounded-full object-cover" />
+    <div>
+      <h3 class="text-lg font-semibold leading-tight">Игорь РукиБазуки</h3>
+      <p class="text-sm text-gray-600">Бицуха</p>
+      <span class="inline-block mt-1 text-xs text-blue-700 border border-blue-600 px-2 py-0.5 rounded-full">
+        Предметные компетенции
+      </span>
+      <div class="mt-3">
+        <div class="flex items-center gap-1 text-yellow-400">
+          <span class="text-base">★★★★☆</span>
+          <span class="text-sm font-semibold text-black">4.54</span>
+        </div>
+        <div class="text-sm text-gray-500 mt-1 flex items-center gap-1">
+          💬14 отзывов
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="flex flex-col md:flex-row gap-4 w-full md:w-[1100px]">
+
+  <div class="flex-1">
+    <div class="flex justify-between items-center">
+      <h4 class="font-semibold text-[16px]">Консультация</h4>
+      <span class="flex items-center gap-1 text-sm text-gray-500">
+        ⏰30 минут
+      </span>
+    </div>
+    <p class="text-sm text-gray-600 mt-2">
+      В консультации вы получите ревью вашей работы, методики преподавания и методы улучшения
+    </p>
+    <p class="text-lg font-bold text-blue-600 mt-2">5 000 ₸</p>
+    <button class="w-full mt-2 bg-blue-600 hover:bg-blue-700 text-white text-sm py-2 rounded-md">Записаться</button>
+  </div>
+  <div class="flex-1">
+    <div class="flex justify-between items-center">
+      <h4 class="font-semibold text-[16px]">Подробный разбор</h4>
+      <span class="flex items-center gap-1 text-sm text-gray-500">
+        ⏰60 минут
+      </span>
+    </div>
+    <p class="text-sm text-gray-600 mt-2">
+      В подробном разборе вы получите конкретные шаги улучшения ваших методик и поддержку на 1 месяц
+    </p>
+    <p class="text-lg font-bold text-orange-500 mt-2">11 000 ₸</p>
+    <button class="w-full mt-2 bg-orange-500 hover:bg-orange-600 text-white text-sm py-2 rounded-md">Записаться</button>
+    </div>
+  </div>
+</div>
+<div class="bg-white rounded-xl shadow-md p-5 flex flex-col md:flex-row justify-between gap-4 mb-6">
+  <div class="flex gap-4 items-start">
+    <img src="images/traner2.jpg" alt="avatar" class="w-20 h-20 rounded-full object-cover" />
+    <div>
+      <h3 class="text-lg font-semibold leading-tight">Вася Кардио</h3>
+      <p class="text-sm text-gray-600">Бегат</p>
+      <span class="inline-block mt-1 text-xs text-blue-700 border border-blue-600 px-2 py-0.5 rounded-full">Предметные компетенции</span>
+      <div class="mt-3">
+        <div class="flex items-center gap-1 text-yellow-400">
+          <span class="text-base">★★★★☆</span>
+          <span class="text-sm font-semibold text-black">4.54</span>
+        </div>
+        <div class="text-sm text-gray-500 mt-1 flex items-center gap-1">💬18 отзывов</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col md:flex-row gap-4 w-full md:w-[1100px]">
+    <div class="flex-1">
+      <div class="flex justify-between items-center">
+        <h4 class="font-semibold text-[16px]">Консультация</h4>
+        <span class="flex items-center gap-1 text-sm text-gray-500">⏰30 минут</span>
+      </div>
+      <p class="text-sm text-gray-600 mt-2">В консультации вы получите ревью вашей работы, методики преподавания и методы улучшения</p>
+      <p class="text-lg font-bold text-blue-600 mt-2">6 000 ₸</p>
+      <button class="w-full mt-2 bg-blue-600 hover:bg-blue-700 text-white text-sm py-2 rounded-md">Записаться</button>
+    </div>
+    <div class="flex-1">
+      <div class="flex justify-between items-center">
+        <h4 class="font-semibold text-[16px]">Подробный разбор</h4>
+        <span class="flex items-center gap-1 text-sm text-gray-500">⏰60 минут</span>
+      </div>
+      <p class="text-sm text-gray-600 mt-2">В подробном разборе вы получите конкретные шаги улучшения ваших методик и поддержку на 1 месяц</p>
+      <p class="text-lg font-bold text-orange-500 mt-2">10 000 ₸</p>
+      <button class="w-full mt-2 bg-orange-500 hover:bg-orange-600 text-white text-sm py-2 rounded-md">Записаться</button>
+    </div>
+  </div>
+</div>
+
+<div class="bg-white rounded-xl shadow-md p-5 flex flex-col md:flex-row justify-between gap-4 mb-6">
+  <div class="flex gap-4 items-start">
+    <img src="images/traner3.jpg" alt="avatar" class="w-20 h-20 rounded-full object-cover" />
+    <div>
+      <h3 class="text-lg font-semibold leading-tight">Алиса Футболчик</h3>
+      <p class="text-sm text-gray-600">Пинать</p>
+      <span class="inline-block mt-1 text-xs text-blue-700 border border-blue-600 px-2 py-0.5 rounded-full">Предметные компетенции</span>
+      <div class="mt-3">
+        <div class="flex items-center gap-1 text-yellow-400">
+          <span class="text-base">★★★★☆</span>
+          <span class="text-sm font-semibold text-black">4.54</span>
+        </div>
+        <div class="text-sm text-gray-500 mt-1 flex items-center gap-1">💬14 отзывов</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col md:flex-row gap-4 w-full md:w-[1100px]">
+    <div class="flex-1">
+      <div class="flex justify-between items-center">
+        <h4 class="font-semibold text-[16px]">Консультация</h4>
+        <span class="flex items-center gap-1 text-sm text-gray-500">⏰30 минут</span>
+      </div>
+      <p class="text-sm text-gray-600 mt-2">В консультации вы получите ревью вашей работы, методики преподавания и методы улучшения</p>
+      <p class="text-lg font-bold text-blue-600 mt-2">8 000 ₸</p>
+      <button class="w-full mt-2 bg-blue-600 hover:bg-blue-700 text-white text-sm py-2 rounded-md">Записаться</button>
+    </div>
+    <div class="flex-1">
+      <div class="flex justify-between items-center">
+        <h4 class="font-semibold text-[16px]">Подробный разбор</h4>
+        <span class="flex items-center gap-1 text-sm text-gray-500">⏰60 минут</span>
+      </div>
+      <p class="text-sm text-gray-600 mt-2">В подробном разборе вы получите конкретные шаги улучшения ваших методик и поддержку на 1 месяц</p>
+      <p class="text-lg font-bold text-orange-500 mt-2">13 000 ₸</p>
+      <button class="w-full mt-2 bg-orange-500 hover:bg-orange-600 text-white text-sm py-2 rounded-md">Записаться</button>
+    </div>
+  </div>
+</div>
+
+<div class="bg-white rounded-xl shadow-md p-5 flex flex-col md:flex-row justify-between gap-4 mb-6">
+  <div class="flex gap-4 items-start">
+    <img src="images/traner4.jpg" alt="avatar" class="w-20 h-20 rounded-full object-cover" />
+    <div>
+      <h3 class="text-lg font-semibold leading-tight">Просто Маша</h3>
+      <p class="text-sm text-gray-600">ЧеПоКайфу</p>
+      <span class="inline-block mt-1 text-xs text-blue-700 border border-blue-600 px-2 py-0.5 rounded-full">Предметные компетенции</span>
+      <div class="mt-3">
+        <div class="flex items-center gap-1 text-yellow-400">
+          <span class="text-base">★★★★☆</span>
+          <span class="text-sm font-semibold text-black">4.54</span>
+        </div>
+        <div class="text-sm text-gray-500 mt-1 flex items-center gap-1">💬14 отзывов</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col md:flex-row gap-4 w-full md:w-[1100px]">
+    <div class="flex-1">
+      <div class="flex justify-between items-center">
+        <h4 class="font-semibold text-[16px]">Консультация</h4>
+        <span class="flex items-center gap-1 text-sm text-gray-500">⏰30 минут</span>
+      </div>
+      <p class="text-sm text-gray-600 mt-2">
+        В консультации вы получите ревью вашей работы, методики преподавания и методы улучшения
+      </p>
+      <p class="text-lg font-bold text-blue-600 mt-2">4 000 ₸</p>
+      <button class="w-full mt-2 bg-blue-600 hover:bg-blue-700 text-white text-sm py-2 rounded-md">Записаться</button>
+    </div>
+    <div class="flex-1">
+        <div class="flex justify-between items-center">
+            <h4 class="font-semibold text-[16px]">Подробный разбор</h4>
+            <span class="flex items-center gap-1 text-sm text-gray-500">⏰60 минут</span>
+        </div>
+        <p class="text-sm text-gray-600 mt-2">
+        В подробном разборе вы получите конкретные шаги улучшения ваших методик и поддержку на 1 месяц
+        </p>
+         <p class="text-lg font-bold text-orange-500 mt-2">16 000 ₸</p>
+        <button class="w-full mt-2 bg-orange-500 hover:bg-orange-600 text-white text-sm py-2 rounded-md">Записаться</button>
+        </div>
+    </div>
+    </div>
+</div>
+            
+            
+
+
+
+        </section>
+    </body>
+</html>
